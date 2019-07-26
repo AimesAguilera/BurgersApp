@@ -1,0 +1,65 @@
+body {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(rgba(26, 25, 25, 0.801), rgba(26, 25, 25, 0.801)),
+      url("../images/dinerImage.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#header {
+    background-color: rgb(145, 243, 145);
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+h3 {
+    color: wheat;
+}
+
+#main-body {
+    /* background-color: antiquewhite; */
+    padding: 15px;
+    margin-top: 150px;
+    text-align: center;
+}
+
+.devour {
+    padding: 0;
+    width: 50px;
+    height: 20px;
+    font-size: 10px;
+}
+
+.burgerName {
+    padding: 2px;
+    font-family: 'Georgia';
+}
+
+#formWaiting {
+    background-color: rgb(221, 221, 81);
+    margin: 5px;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+#formDevoured {
+    background-color: rgb(221, 221, 81);
+    margin: 5px;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+#form-holder {
+    padding: 10px;
+}
+
+.remove {
+    width: 50px;
+    height: 20px;
+    font-size: 10px;
+    padding: 0;
+    color: black;
+}

@@ -1,0 +1,12 @@
+19-07-26 17:39:24.2353498 pid:21960 tid:1 sqltools Critical: 0 : An unhandled exception occurred: System.IO.FileLoadException: 
+File name: 'System.Runtime.InteropServices, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a'
+   at System.IO.Enumeration.FileSystemEnumerator`1..ctor(String directory, EnumerationOptions options)
+   at System.IO.Enumeration.FileSystemEnumerable`1..ctor(String directory, FindTransform transform, EnumerationOptions options)
+   at System.IO.Enumeration.FileSystemEnumerableFactory.UserFiles(String directory, String expression, EnumerationOptions options)
+   at System.IO.Directory.InternalEnumeratePaths(String path, String searchPattern, SearchTarget searchTarget, EnumerationOptions options)
+   at Microsoft.SqlTools.Extensibility.ExtensionServiceProvider.CreateFromAssembliesInDirectory(IEnumerable`1 inclusionList)
+   at Microsoft.SqlTools.ServiceLayer.HostLoader.InitializeRequestHandlersAndServices(ServiceHost serviceHost, SqlToolsContext sqlToolsContext)
+   at Microsoft.SqlTools.ServiceLayer.HostLoader.CreateAndStartServiceHost(SqlToolsContext sqlToolsContext)
+   at Microsoft.SqlTools.ServiceLayer.Program.Main(String[] args)
+
+

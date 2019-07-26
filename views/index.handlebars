@@ -1,0 +1,50 @@
+<div class="container" id="main-body">
+    <div class="container" id="header">
+        <h1>Eat the Burger Please</h1>
+    </div>
+    <div class="row" id="row-holder">
+        <div class="col-sm">
+            <h3> Burgers waiting... </h3>
+            <div class="container" id="waitingHolder">
+                <ul>
+                    {{#each burgers}}
+                    {{#unless devoured}}
+                    <form id="formWaiting">
+                        <span class="burgerName">{{this.burger_name}}</span>
+                        <button type="submit" class="btn btn-warning devour" data-id="{{id}}" data-newdevour="1">
+                            DEVOUR
+                        </button>
+                    </form>
+                    {{/unless}}
+                    {{/each}}
+                </ul>
+            </div>
+        </div>
+        <div class="col-sm">
+            <div class="container" id="form-holder">
+                <form id="submitForm" action="/" method="POST">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="userBurgerInput" name="burger_name"
+                            placeholder=". . .">
+                    </div>
+                    <button type="button" class="btn btn-info" id="submitButton">ADD</button>
+                </form>
+            </div>
+        </div>
+        <div class="col-sm">
+            <h3> and, Done! </h3>
+            <div class="container" id="devouredHolder">
+                <ul>
+                    {{#each burgers}}
+                    {{#if devoured}}
+                    <form id="formDevoured">
+                        <span class="burgerName">{{this.burger_name}}</span>
+                        <button type="submit" class="btn btn-light remove" data-id="{{this.id}}"> remove? </button>
+                    </form>
+                    {{/if}}
+                    {{/each}}
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
